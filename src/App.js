@@ -45,6 +45,15 @@ function App() {
   //     prevProgress <= 100 ? prevProgress + 25 : prevProgress = 25
   //   ); 
   // };
+
+  // Progress bar
+  // const [progress, setProgress] = useState(0);
+
+  // const handleAdd25 = () => {
+  //   setProgress((prevProgress) =>
+  //     prevProgress <= 100 ? prevProgress + 25 : prevProgress = 25
+  //   ); 
+  // };
   
   // Progress bar
   // const [progress, setProgress] = useState(0);
