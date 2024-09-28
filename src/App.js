@@ -44,9 +44,13 @@ function App() {
     setProgress((prevProgress) =>
       prevProgress <= 100 ? prevProgress + 25 : prevProgress = 25
     ); 
-    
+
   // const [progress, setProgress] = useState(0);
 
+  // const handleAdd25 = () => {
+  //   setProgress((prevProgress) =>
+  //     prevProgress <= 100 ? prevProgress + 25 : prevProgress = 25
+  //   ); 
   // const handleAdd25 = () => {
   //   setProgress((prevProgress) =>
   //     prevProgress <= 100 ? prevProgress + 25 : prevProgress = 25
