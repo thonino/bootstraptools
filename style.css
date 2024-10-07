@@ -1,4 +1,16 @@
-html, body { height: 100%; margin: 0; padding: 0;}
+.fs-7{
+  font-size: small;
+}
+.show{
+  display: block !important;
+}
+.hidden{
+  display: none !important;
+}
+.once{
+  white-space: nowrap;
+}
+
 /* light */
 .text-primary-light { color: #b3d7ff !important; }
 .text-secondary-light { color: #d6d8db !important; }
