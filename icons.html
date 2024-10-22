@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="./index.js" defer></script>
+</head>    
+<body class="bg-dark d-flex flex-column align-items-center">
+    <!-- Icone Table -->
+    <h1 class="fs-1 fw-bold text-secondary text-center mt-2 mb-4 m-0 ">
+      <span class="text-success-light ">Bootstrap Colors</span>
+    </h1>
+    <div class="tables-w"> 
+      <table class="table caption-top text-center">
+        <caption class="text-secondary"><strong>List</strong></caption>
+        <thead>
+          <tr>
+            <th>Icon</th>
+            <th>Code</th>
+            <th>Copy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row"><i class="bi bi-search"></i></td>
+            <td>
+              <code id="search" class="d-none"><i class="bi bi-search"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-search"&gt;&lt;/i&gt;</code>
+            <td>
+              <button onclick="copy('search')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-copy"></i></td>
+            <td>
+              <code id="copy" class="d-none"><i class="bi bi-copy"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-copy"&gt;&lt;/i&gt;</code>
+            <td>
+              <button onclick="copy('copy')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-dash-lg"></i></td>
+            <td>
+              <code id="dash-lg" class="d-none"><i class="bi bi-dash-lg"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-dash-lg"&gt;&lt;/i&gt; </code>
+            <td>
+              <button onclick="copy('dash-lg')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-plus-lg"></i></td>
+            <td>
+              <code id="plus-lg" class="d-none"><i class="bi bi-plus-lg"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-plus-lg"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('plus-lg')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-check-lg"></i></td>
+            <td>
+              <code id="check-lg" class="d-none"><i class="bi bi-check-lg"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-check-lg"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('check-lg')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-x-lg"></i></td>
+            <td>
+              <code id="x-lg" class="d-none"><i class="bi bi-x-lg"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-x-lg"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('x-lg')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-pencil-fill"></i></td>
+            <td>
+              <code id="pencil-fill" class="d-none"><i class="bi bi-pencil-fill"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-pencil-fill"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('pencil-fill')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-trash"></i></td>
+            <td>
+              <code id="trash" class="d-none"><i class="bi bi-trash"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-trash"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('trash')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-cart"></i></td>
+            <td>
+              <code id="cart" class="d-none"><i class="bi bi-cart"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-cart"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('cart')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-send"></i></td>
+            <td>
+              <code id="send" class="d-none"><i class="bi bi-send"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-send"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('send')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-envelope"></i></td>
+            <td>
+              <code id="envelope" class="d-none"><i class="bi bi-envelope"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-envelope"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('envelope')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-chat"></i></td>
+            <td>
+              <code id="chat" class="d-none"><i class="bi bi-chat"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-chat"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('chat')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-bell"></i></td>
+            <td>
+              <code id="bell" class="d-none"><i class="bi bi-bell"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-bell"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('bell')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-chevron-right"></i></td>
+            <td>
+              <code id="chevron-right" class="d-none"><i class="bi bi-chevron-right"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-chevron-right"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('chevron-right')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-chevron-left"></i></td>
+            <td>
+              <code id="chevron-left" class="d-none"><i class="bi bi-chevron-left"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-chevron-left"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('chevron-left')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-arrow-right"></i></td>
+            <td>
+              <code id="arrow-right" class="d-none"><i class="bi bi-arrow-right"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-arrow-right"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('arrow-right')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-arrow-left"></i></td>
+            <td>
+              <code id="arrow-left" class="d-none"><i class="bi bi-arrow-left"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-arrow-left"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('arrow-left')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-file-earmark"></i></td>
+            <td>
+              <code id="file-earmark" class="d-none"><i class="bi bi-file-earmark"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-file-earmark"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('file-earmark')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-person"></i></td>
+            <td>
+              <code id="person" class="d-none"><i class="bi bi-person"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-person"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('person')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-person-plus"></i></td>
+            <td>
+              <code id="person-plus" class="d-none"><i class="bi bi-person-plus"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-person-plus"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('person-plus')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-telephone"></i></td>
+            <td>
+              <code id="telephone" class="d-none"><i class="bi bi-telephone"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-telephone"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('telephone')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-youtube"></i></td>
+            <td>
+              <code id="youtube" class="d-none"><i class="bi bi-youtube"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-youtube"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('youtube')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-whatsapp"></i></td>
+            <td>
+              <code id="whatsapp" class="d-none"><i class="bi bi-whatsapp"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-whatsapp"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('whatsapp')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-tiktok"></i></td>
+            <td>
+              <code id="tiktok" class="d-none"><i class="bi bi-tiktok"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-tiktok"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('tiktok')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-facebook"></i></td>
+            <td>
+              <code id="facebook" class="d-none"><i class="bi bi-facebook"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-facebook"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('facebook')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-instagram"></i></td>
+            <td>
+              <code id="instagram" class="d-none"><i class="bi bi-instagram"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-instagram"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('instagram')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-messenger"></i></td>
+            <td>
+              <code id="messenger" class="d-none"><i class="bi bi-messenger"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-messenger"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('messenger')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row"><i class="bi bi-linkedin"></i></td>
+            <td>
+              <code id="linkedin" class="d-none"><i class="bi bi-linkedin"></i></code>
+              <code class="text-success"> &lt;i class="bi bi-linkedin"&gt;&lt;/i&gt; </code>
+            </td>
+            <td>
+              <button onclick="copy('linkedin')" class="btn btn-light">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>              
+    </div>
+    <div class="text-center mb-3">
+      <a href="./index.html" class="btn btn-success">Return</a>
+    </div>
+</body>
+</html>

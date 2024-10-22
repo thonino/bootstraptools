@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="./index.js" defer></script>
+</head>    
+<body class="bg-dark d-flex flex-column">
+  <!--Table -->
+  <h1 class="fw-bold text-secondary text-center mt-2 m-0 ">
+    <span class="text-success-light">Bootstrap Icones</span>
+  </h1>
+  <!-- Btn Toggle -->
+  <div class="text-center my-2 mt-3">
+    <button id="getCss" class="btn btn-warning">Get css</button>
+  </div>
+  <!-- Toggle target -->
+  <div id="getCssTarget" class="d-none">
+    <pre class="d-flex flex-column align-items-md-center bg-secondary-dark text-info-light rounded mx-2 p-2">
+      <div class="d-flex align-items-center justify-content-center pt-2">
+        <p class="text-warning-dark fw-bold text-center h1 m-0"> Add to : <span class="text-warning">/style.css </span></p>
+        <div id="cssColorsCopy" class="btn btn-lg text-warning p-0 ms-2"> <i class="bi bi-copy"></i> </div>
+      </div>
+      <code id="cssInner" ></code>
+    </pre>
+  </div>
+  <!-- Tables -->
+  <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center p-2 gap-2 mb-2">
+    <!-- bright -->
+    <div class="tables-w">
+      <table class="table caption-top text-center m-0 p-2">
+        <caption class="text-secondary"><strong>Bright</strong></caption>
+        <thead>
+          <tr>
+            <th class="">Name</th>
+            <th>Code</th>
+            <th class="">Copy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p class="text-primary"><strong>primary</strong></p></td>
+            <td><code id="primary" class="text-primary">#0d6efd</code></td>
+            <td>
+              <button onclick="copy('primary')" class="btn btn-sm btn-primary">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-success"><strong>success</strong></p></td>
+            <td><code id="success" class="text-success">#198754</code></td>
+            <td>
+              <button onclick="copy('success')" class="btn btn-sm btn-success">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-danger"><strong>danger</strong></p></td>
+            <td><code id="danger" class="text-danger">#dc3545</code></td>
+            <td>
+              <button onclick="copy('danger')" class="btn btn-sm btn-danger">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-warning"><strong>warning</strong></p></td>
+            <td><code id="warning" class="text-warning">#ffc107</code></td>
+            <td>
+              <button onclick="copy('warning')" class="btn btn-sm btn-warning">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-info"><strong>info</strong></p></td>
+            <td><code id="info" class="text-info">#0dcaf0</code></td>
+            <td>
+              <button onclick="copy('info')" class="btn btn-sm btn-info">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-secondary"><strong>light</strong></p></td>
+            <td><code id="light" class="text-secondary">#f8f9fa</code></td>
+            <td>
+              <button onclick="copy('light')" class="btn btn-sm btn-light border border-secondary">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-secondary"><strong>secondary</strong></p></td>
+            <td><code id="secondary" class="text-secondary">#6c757d</code></td>
+            <td>
+              <button onclick="copy('secondary')" class="btn btn-sm btn-secondary">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="">
+              <p class="text-dark"><strong>dark</strong></p>
+            </td>
+            <td><code id="dark" class="text-dark">#212529</code></td>
+            <td class="">
+              <button onclick="copy('dark')" class="btn btn-sm btn-dark">
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Light -->
+    <div class="tables-w ">
+      <table class="table caption-top text-center m-0 p-2">
+        <caption class="text-secondary"><strong>Light</strong></caption>
+        <thead>
+          <tr>
+            <th class=" bg-secondary-dark text-light">Name</th>
+            <th class="bg-secondary-dark text-light">Code</th>
+            <th class=" bg-secondary-dark text-light">Copy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bg-secondary-dark text-light">
+              <p class="text-primary-light"><strong>primary-light</strong></p>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <code id="primary-light" class="text-primary-light">#b3d7ff</code>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <button 
+                onclick="copy('primary-light')" 
+                class="btn btn-sm bg-primary-light"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg-secondary-dark text-light">
+              <p class="text-success-light"><strong>success-light</strong></p>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <code id="success-light" class="text-success-light">#b7e4c7</code>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <button 
+                onclick="copy('success-light')" 
+                class="btn btn-sm bg-success-light"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg-secondary-dark text-light">
+              <p class="text-danger-light"><strong>danger-light</strong></p>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <code id="danger-light" class="text-danger-light">#f8d7da</code>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <button 
+                onclick="copy('danger-light')" 
+                class="btn btn-sm bg-danger-light"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg-secondary-dark text-light">
+              <p class="text-warning-light"><strong>warning-light</strong></p>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <code id="warning-light" class="text-warning-light">#fff3cd</code>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <button 
+                onclick="copy('warning-light')" 
+                class="btn btn-sm bg-warning-light"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg-secondary-dark text-light">
+              <p class="text-info-light"><strong>info-light</strong></p>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <code id="info-light" class="text-info-light">#cfe9f7</code>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <button 
+                onclick="copy('info-light')" 
+                class="btn btn-sm bg-info-light"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg-secondary-dark text-light ">
+              <p class="text-secondary-light"><strong>secondary-light</strong></p>
+            </td>
+            <td class="bg-secondary-dark text-light">
+              <code id="secondary-light" class="text-secondary-light">#d6d8db</code>
+            </td>
+            <td class="bg-secondary-dark text-light ">
+              <button 
+                onclick="copy('secondary-light')" 
+                class="btn btn-sm bg-secondary-light"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Dark -->
+    <div class="tables-w">
+      <table class="table caption-top text-center m-0 p-2">
+        <caption class="text-secondary"><strong>Dark</strong></caption>
+        <thead>
+          <tr>
+            <th class="">Name</th>
+            <th>Code</th>
+            <th class="">Copy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p class="text-primary-dark"><strong>primary-dark</strong></p></td>
+            <td><code id="primary-dark" class="text-primary-dark">#0a48b3</code></td>
+            <td>
+              <button 
+                onclick="copy('primary-dark')" 
+                class="btn btn-sm bg-primary-dark"
+              >
+                <i class="bi bi-copy text-light"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-success-dark"><strong>success-dark</strong></p></td>
+            <td><code id="success-dark" class="text-success-dark">#11623c</code></td>
+            <td>
+              <button 
+                onclick="copy('success-dark')" 
+                class="btn btn-sm bg-success-dark"
+              >
+                <i class="bi bi-copy text-light"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-danger-dark"><strong>danger-dark</strong></p></td>
+            <td><code id="danger-dark" class="text-danger-dark">#9e1f2c</code></td>
+            <td>
+              <button 
+                onclick="copy('danger-dark')" 
+                class="btn btn-sm bg-danger-dark"
+              >
+                <i class="bi bi-copy text-light"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-warning-dark"><strong>warning-dark</strong></p></td>
+            <td><code id="warning-dark" class="text-warning-dark">#a37c05</code></td>
+            <td>
+              <button 
+                onclick="copy('warning-dark')" 
+                class="btn btn-sm bg-warning-dark"
+              >
+                <i class="bi bi-copy text-light"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><p class="text-info-dark"><strong>info-dark</strong></p></td>
+            <td><code id="info-dark" class="text-info-dark">#086589</code></td>
+            <td>
+              <button 
+                onclick="copy('info-dark')" 
+                class="btn btn-sm bg-info-dark"
+              >
+                <i class="bi bi-copy text-light"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class=""><p class="text-secondary-dark"><strong>secondary-dark</strong></p></td>
+            <td><code id="secondary-dark" class="text-secondary-dark">#343a40</code></td>
+            <td class="">
+              <button 
+                onclick="copy('secondary-dark')" 
+                class="btn btn-sm bg-secondary-dark"
+              >
+                <i class="bi bi-copy text-light"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="d-block text-center mb-3">
+    <a href="./index.html" class="btn btn-success">Return</a>
+  </div>
+  <script>
+
+  const colorsCss =`
+/* Light */
+.text-primary-light { color: #b3d7ff !important; }
+.text-success-light { color: #b7e4c7 !important; }
+.text-danger-light { color: #f8d7da !important; }
+.text-warning-light { color: #fff3cd !important; }
+.text-info-light { color: #cfe9f7 !important; }
+.text-secondary-light { color: #d6d8db !important; }
+
+.bg-primary-light, .bg-primary-light:hover{ background-color: #b3d7ff !important; }
+.bg-success-light, .bg-success-light:hover{ background-color: #b7e4c7 !important; }
+.bg-danger-light, .bg-danger-light:hover{ background-color: #f8d7da !important; }
+.bg-warning-light, .bg-warning-light:hover { background-color: #fff3cd !important; }
+.bg-info-light, .bg-info-light:hover{ background-color: #cfe9f7 !important; }
+.bg-secondary-light, .bg-secondary-light:hover { background-color: #d6d8db !important; }
+
+/* Dark */
+.text-primary-dark { color: #0a48b3 !important; }
+.text-success-dark { color: #11623c !important; }
+.text-danger-dark { color: #9e1f2c !important; }
+.text-warning-dark { color: #a37c05 !important; }
+.text-info-dark { color: #086589 !important; }
+.text-secondary-dark { color: #343a40 !important; }
+.bg-primary-dark, .bg-primary-dark:hover { background-color: #0a48b3 !important; }
+.bg-success-dark, .bg-success-dark:hover { background-color: #11623c !important; }
+.bg-danger-dark, .bg-danger-dark:hover { background-color: #9e1f2c !important; }
+.bg-warning-dark { background-color: #a37c05 !important; }
+.bg-info-dark, .bg-info-dark:hover { background-color: #086589 !important; }
+.bg-secondary-dark { background-color: #343a40 !important; }
+
+/*  Bright 
+
+Primary : #0d6efd
+Success : #198754
+Danger : #dc3545
+Warning : #ffc107
+Info : #0dcaf0
+Light : #f8f9fa
+Secondary : #6c757d
+Dark : #212529
+*/
+  `
+  // InnerText
+  let cssInner = document.getElementById("cssInner");
+  cssInner.innerText = colorsCss;
+
+  // Click to Copy 
+  let cssColorsCopy = document.getElementById("cssColorsCopy");
+  cssColorsCopy.addEventListener("click", () => {
+    navigator.clipboard.writeText(colorsCss)
+  })
+
+  // Btn toggle
+  let getCss = document.getElementById("getCss");
+  let getCssTarget = document.getElementById("getCssTarget")
+  getCss.addEventListener("click", () => {
+    setTimeout(() => { getCssTarget.classList.toggle("d-none")}, 250);
+  })
+
+  </script>
+  </body>
+</html>
+
+
+
+

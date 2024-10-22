@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap tools</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./index.js"></script>
+  </head>
+  <body class="bg-info-light">
+    <div class="text-center">
+      <h1 class="fw-bold text-secondary">Bootstrap Tools</h1>
+
+      <!-- CDN -->
+      <button id="cdnToggle" class="btn btn-warning mb-2">
+        <code class="text-dark">Get CDN</code>
+      </button>
+      <div id="cdnTarget" class="d-none px-2">
+        <div class="bg-secondary-dark text-light px-2 rounded">
+          <div class="text-center mb-2 p-0">
+            <div class="text-center m-0 p-0">
+              <!-- Icons -->
+              <span class="h4 text-warning"> Get Icons </span>
+              <div class="rounded p-2 text-light d-flex">
+                <code class="d-block text-info-light overflow-auto once pb-3">
+                  &lt;link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+                  rel="stylesheet"&gt;
+                </code>
+                <button id="icons" class="btn text-warning mt-fix-5 ms-2">
+                  <i class="bi bi-copy"></i>
+                </button>
+              </div>
+            </div>
+            <!-- CSS -->
+            <span class="h4 text-warning"> Get Start </span>
+            <div class="rounded p-2 text-light d-flex">
+              <code class="d-block text-info-light overflow-auto once pb-3">
+                &lt;link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                crossorigin="anonymous"&gt;
+              </code>
+              <button id="css" class="btn text-warning mt-fix-5 ms-2">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+          <div class="">
+            <!-- JS -->
+            <div class="rounded mb-2 p-2 text-light d-flex">
+              <code class="d-block text-info-light overflow-auto once pb-3">
+                &lt;script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"&gt;&lt;/script&gt;
+              </code>
+              <button id="js" class="btn text-warning mt-fix-5 ms-2">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colors -->
+      <div class="">
+        <a
+          href="colors.html"
+          id="iconTargetBlank"
+          class="btn bg-secondary-dark text-success-light undecored mb-2"
+        >
+          _Colors
+        </a>
+      </div>
+
+      <!-- Icons -->
+      <div class="">
+        <a
+          href="icons.html"
+          id="iconTargetBlank"
+          class="btn bg-secondary-dark text-success-light undecored mb-2"
+        >
+          _Icons
+        </a>
+      </div>
+
+      <!-- Navbar tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="navbarToggle" class="btn bg-info">Navbar</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="navbarTarget"
+          class="d-none bg-secondary-dark py-2 mt-2 rounded"
+        >
+          <!-- innerHTML-->
+          <div id="navbarInnerHTML" class="mx-2"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="navbarInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="navbarBtnCopy"
+                class="btn bg-secondary-dark text-info"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="footerToggle" class="btn bg-info">Footer</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="footerTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div id="footerInnerHTML" class="gap-2"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="footerInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="footerBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OffCanvas tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="offcanvasToggle" class="btn bg-info">OffCanvas</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="offcanvasTarget"
+          class="d-none bg-secondary-dark py-2 mt-2 rounded"
+        >
+          <!-- innerHTML-->
+          <div id="offcanvasInnerHTML" class="text-center"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="offcanvasInnerText" class=""></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="offcanvasBtnCopy"
+                class="btn bg-secondary-dark text-info"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="formToggle" class="btn bg-info">Form</button>
+        </div>
+        <!-- toggle -->
+        <div id="formTarget" class="d-none bg-secondary-dark py-2 mt-2 rounded">
+          <!-- innerHTML-->
+          <div id="formInnerHTML" class="text-center"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="formInnerText" class=""></code>
+            </pre>
+            <div class="text-center">
+              <button id="formBtnCopy" class="btn bg-secondary-dark text-info">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dropdown tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="dropdownToggle" class="btn bg-info">Dropdown-menu</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="dropdownTarget"
+          class="d-none bg-secondary-dark py-2 mt-2 rounded"
+        >
+          <!-- innerHTML-->
+          <div id="dropdownInnerHTML" class="text-center"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="dropdownInnerText" class=""></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="dropdownBtnCopy"
+                class="btn bg-secondary-dark text-info"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="tableToggle" class="btn bg-info">Table</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="tableTarget"
+          class="d-none bg-secondary-dark pt-2 p-0 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div id="tableInnerHTML" class="mx-2"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded mb-2">
+            <pre
+              class="d-flex justify-content-sm-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+                <code id="tableInnerText" class=""></code>
+              </pre>
+            <div class="text-center">
+              <button
+                id="tableBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="modalToggle" class="btn bg-info">Modal</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="modalTarget"
+          class="d-none bg-secondary-dark pt-2 p-0 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div class="d-flex justify-content-center">
+            <div id="modalInnerHTML" class="mx-2"></div>
+          </div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded mb-2">
+            <pre
+              class="d-flex justify-content-lg-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="modalInnerText" class=""></code>
+            </pre>
+            <div class="text-center">
+              <button id="modalBtnCopy" class="btn bg-secondary-dark text-info">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="toastToggle" class="btn bg-info">Toast</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="toastTarget"
+          class="d-none bg-secondary-dark pt-2 p-0 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div class="d-flex justify-content-center">
+            <div id="toastInnerHTML" class="mx-2"></div>
+          </div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light mb-2 rounded">
+            <pre
+              class="d-flex justify-content-lg-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="toastInnerText" class=""></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="toastBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progressbar tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="progressToggle" class="btn bg-info">Progressbar</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="progressTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div
+            id="progressInnerHTML"
+            class="d-flex flex-column gap-2 m-2"
+          ></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="progressInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="progressBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ButtonsGroup tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="buttonsGroupToggle" class="btn bg-info">
+            ButtonsGroup
+          </button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="buttonsGroupTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div
+            id="buttonsGroupInnerHTML"
+            class="d-flex flex-column gap-2"
+          ></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-sm-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="buttonsGroupInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="buttonsGroupBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alert tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="alertToggle" class="btn bg-info">Alert</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="alertTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div id="alertInnerHTML" class="d-flex flex-column"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="alertInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="alertBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Badges tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="badgesToggle" class="btn bg-info">Badges</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="badgesTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div class="d-flex justify-content-center mt-2">
+            <div id="badgesInnerHTML" class="d-flex flex-column gap-2"></div>
+          </div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-lg-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="badgesInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="badgesBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Image tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="cardImgToggle" class="btn bg-info">Card Image</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="cardImgTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div class="d-flex justify-content-center">
+            <div id="cardImgInnerHTML" class="d-flex flex-column gap-2"></div>
+          </div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-lg-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="cardImgInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="cardImgBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card List tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="cardListToggle" class="btn bg-info">Card List</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="cardListTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div
+            id="cardListInnerHTML"
+            class="d-flex justify-content-center gap-2"
+          ></div>
+          <!-- code -->
+          <div class="container bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="cardListInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="cardListBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="paginationToggle" class="btn bg-info">Pagination</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="paginationTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div class="d-flex justify-content-center">
+            <div id="paginationInnerHTML" class="gap-2"></div>
+          </div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="paginationInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="paginationBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="carouselToggle" class="btn bg-info">Carousel</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="carouselTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div id="carouselInnerHTML" class="d-flex flex-column gap-2"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="carouselInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="carouselBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion tool -->
+      <div class="container mb-2">
+        <!-- btn -->
+        <div class="text-center">
+          <button id="accordionToggle" class="btn bg-info">Accordion</button>
+        </div>
+        <!-- toggle -->
+        <div
+          id="accordionTarget"
+          class="d-none bg-secondary-dark p-2 p-0 mb-2 mt-2 rounded"
+        >
+          <!-- innerHtml -->
+          <div id="accordionInnerHTML" class="gap-2 rounded"></div>
+          <!-- code -->
+          <div class="bg-secondary-dark text-info-light rounded">
+            <pre
+              class="d-flex justify-content-md-center justify-content-start text-start px-2 m-0 pb-3"
+            >
+              <code id="accordionInnerText"></code>
+            </pre>
+            <div class="text-center">
+              <button
+                id="accordionBtnCopy"
+                class="btn bg-secondary-dark text-info mb-2"
+              >
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- whole : end  -->
+    <div class="mb-3"></div>
+  </body>
+</html>
